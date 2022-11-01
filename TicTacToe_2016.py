@@ -1,18 +1,6 @@
 # Pam Qian 2016 Fall CS 112 Python Midterm Project II
 # Tic Tack Toe 
 
-def main():
-# The main function
-    introduction = intro()
-    board = create_grid()
-    pretty = printPretty(board)
-    symbol_1, symbol_2 = sym()
-    full = isFull(board, symbol_1, symbol_2) # The function that starts the game is also in here.
-    
-
-    
-
-
 def intro():
 # This function introduces the rules of the game Tic Tac Toe
     print("Hello! Welcome to Pam's Tic Tac Toe game!")
@@ -193,7 +181,18 @@ def report(count, winner, symbol_1, symbol_2):
     else:
         print("There is a tie. ")
 
+def main():
+# The main function
+    introduction = intro()
+    board = create_grid()
+    pretty = printPretty(board)
+    symbol_1, symbol_2 = sym()
+    full = isFull(board, symbol_1, symbol_2) # The function that starts the game is also in here.
+  
+
+
 # Call Main
-main()
+if __name__ == "__main__":
+    main()
 
     

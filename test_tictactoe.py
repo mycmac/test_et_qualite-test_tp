@@ -1,10 +1,17 @@
-from TicTacToe_2016 import create_grid
+
 
 import pytest
 
-class test_tictactoe():
+import TicTacToe_2016 as ttt
+
+class TestZone:
+
+    def testtrue(self):
+        assert 1
+
     def test_create_grid(self):
-        b = create_grid()
+        b = ttt.create_grid()
+        print(b)
         assert b == [[" ", " ", " "],
-             [" ", " ", " "],
+                     [" ", " ", " "],
              [" ", " ", " "]]
